@@ -17,3 +17,12 @@
 .nav-link:hover {
     background-color: rgb(238, 48, 79);
 }
+
+.button {
+    padding: 10px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgb(212, 7, 7);
+}
