@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgba(0, 0, 0, 0.39);
+            background-image: url('./images/Travel\ zones.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        
+        .card {
+            width: 44%;
+            height: 95vh;
+            border: 2 px solid black;
+            background-color: rgb(26, 117, 202);
+            margin-top: 1%;
+            margin-left: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.932);
+            border-style: ridge;
+            border: 5px solid blue;
+        }
+        
+        .card:hover {
+            background-color: rgba(255, 0, 0, 0.801);
+        }
+        
+        .circle1 {
+            width: 200px;
+            height: 200px;
+            border-radius: 160px;
+            background-color: grey;
+            display: inline-flex;
+            margin-left: 70px;
+            background-image: url("./images/b.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 10%;
+            border-top: 2px solid grey;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.795);
+        }
+        
+        .circle2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 160px;
+            display: inline-flex;
+            margin-left: 90px;
+            background-image: url("./images/user2.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.795);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./images/travel-world.jpg" width="100%" height="50%" style="padding: 10px; border:8px solid white;border-style:dotted"><br>
+            <div class="circle1" usemap="#mysmap">
+                <!-- <map name="mysmap">
+                    <area 
+                    shape="circle"
+                    coords="126,127,253"
+                    href="./introaboutcss.html"  target="_blank"/> -->
+            </div>
+            <div class="circle2"></div>
+            <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-left:20%;margin-top:10px;text-shadow:4px 4px 4px rgb(9, 46, 9)">ADMIN</h2>
+            <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-left:65%;margin-top:-30px;text-shadow:4px 4px 4px rgb(9, 46, 9)">USERS</h2>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    background-color: rgb(39, 172, 216);
+    height: 10vh;
+}
+
+.nav-link {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: rgb(238, 48, 79);
+}
