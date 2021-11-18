@@ -69,12 +69,12 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: #333;
+    background: rgba(59, 58, 58, 0.952);
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 20px;
 }
 
 header .logo {
@@ -85,17 +85,35 @@ header .logo {
 }
 
 header .logo span {
-    color: var(--orange);
+    color: rgb(255, 94, 0);
 }
 
-header .navbar a {
+.navbar a {
     color: #fff;
-    font-size: 2rem;
-    margin: 0 .8rem;
+    font-size: 25px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-header .navbar a:hover {
-    color: var(--orange);
+.log {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(223, 19, 53);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.log:hover {
+    background-color: rgb(240, 72, 42);
+}
+
+.navbar a:hover {
+    background-color: rgb(190, 43, 68);
+}
+
+.navbar i {
+    margin-right: 10px;
 }
 
 header .icons i {
@@ -106,7 +124,7 @@ header .icons i {
 }
 
 header .icons i:hover {
-    color: var(--orange);
+    color: orange;
 }
 
 header .search-bar-container {
@@ -145,91 +163,6 @@ header .search-bar-container label {
 
 header .search-bar-container label:hover {
     color: var(--orange);
-}
-
-.login-form-container {
-    position: fixed;
-    top: -120%;
-    left: 0;
-    z-index: 10000;
-    min-height: 100vh;
-    width: 100%;
-    background: rgba(0, 0, 0, .7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.login-form-container.active {
-    top: 0;
-}
-
-.login-form-container form {
-    margin: 2rem;
-    padding: 1.5rem 2rem;
-    border-radius: .5rem;
-    background: #fff;
-    width: 50rem;
-}
-
-.login-form-container form h3 {
-    font-size: 3rem;
-    color: #444;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-.login-form-container form .box {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.7rem;
-    color: #333;
-    margin: .6rem 0;
-    border: .1rem solid rgba(0, 0, 0, .3);
-    text-transform: none;
-}
-
-.login-form-container form .box:focus {
-    border-color: var(--orange);
-    ;
-}
-
-.login-form-container form #remember {
-    margin: 2rem 0;
-}
-
-.login-form-container form label {
-    font-size: 1.5rem;
-}
-
-.login-form-container form .btn {
-    display: block;
-    width: 100%;
-}
-
-.login-form-container form p {
-    padding: .5rem 0;
-    font-size: 1.5rem;
-    color: #666;
-}
-
-.login-form-container form p a {
-    color: var(--orange);
-}
-
-.login-form-container form p a:hover {
-    color: #333;
-    text-decoration: underline;
-}
-
-.login-form-container #form-close {
-    position: absolute;
-    top: 2rem;
-    right: 3rem;
-    font-size: 5rem;
-    color: #fff;
-    cursor: pointer;
 }
 
 #menu-bar {
@@ -478,55 +411,6 @@ header .search-bar-container label:hover {
     font-size: 1.5rem;
     color: #eee;
     padding: .5rem 0;
-}
-
-.contact .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-.contact .row .image {
-    flex: 1 1 35rem;
-}
-
-.contact .row .image img {
-    width: 100%;
-}
-
-.contact .row form {
-    flex: 1 1 50rem;
-    padding: 2rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
-    border-radius: .5rem;
-}
-
-.contact .row form .inputBox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.contact .row form .inputBox input,
-.contact .row form textarea {
-    width: 49%;
-    margin: 1rem 0;
-    padding: 1rem;
-    font-size: 1.7rem;
-    color: #333;
-    background: #f7f7f7;
-    text-transform: none;
-}
-
-.contact .row form textarea {
-    height: 15rem;
-    resize: none;
-    width: 100%;
-}
-
-.brand-container {
-    text-align: center;
 }
 
 .footer {
