@@ -1,188 +1,152 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>About Us</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
-        <style>
-            *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+<head>
+	<title>About Us Section</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        *{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
-body{
-    font-family: 'Playfair Display', serif;
-    display: grid;
-    background-color: #f4f4f4;
-    align-content: center;
-    min-height: 100vh;
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgb(184, 198, 236);
 }
-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 90vh;
-    width: 85vw;
-    margin: 0 auto;
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
 }
-.image{
-    background: url("./package/images/person.jpg") center/cover no-repeat;
+.content-section{
+	float: left;
+	width: 55%;
 }
-.content{
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.image-section{
+	float: right;
+	width: 40%;
 }
-.content h2{
-    text-transform: uppercase;
-    font-size: 36px;
-    letter-spacing: 6px;
-    opacity: 0.9;
+.image-section img{
+	width: 100%;
+	height: auto;
 }
-.content span{
-    height: 0.5px;
-    width: 80px;
-    background: #777;
-    margin: 30px 0;
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
 }
-.content p{
-    padding-bottom: 15px;
-    font-weight: 300;
-    opacity: 0.7;
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 1.7;
+.content-section .content h3{
+	margin-top: 20px;
+	color:#8d0303;
+	font-size: 21px;
 }
-.links{
-    margin: 15px 0;
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.links li{
-    border: 0.5px solid #777;
-    list-style: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    width: 160px;
-    text-align: center;
+.content-section .content .button{
+	margin-top: 30px;
 }
-.links li a{
-    text-transform: uppercase;
-    color: #777;
-    text-decoration: none;
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+    border-radius: 10px;
 }
-.links li:hover{
-    border-color: #06d6a0;
+.content-section .content .button a:hover{
+	background-color: #2e1cd3;
+	color:#fff;
 }
-.links li:hover a{
-    color :#06d6a0;
+.content-section .social{
+	margin: 40px 40px;
 }
-.vertical-line{
-    height: 30px;
-    width: 0.5px;
-    background: #777;
-    margin: 0 auto;
+.content-section .social i{
+	color:#d81b1b;
+	font-size: 30px;
+	padding:0px 10px;
 }
-.icons{
-    display: flex;
-    padding: 15px 0;
+.content-section .social i:hover{
+	color:#3d3d3d;
 }
-.icons li{
-    display: block;
-    padding: 5px;
-    margin: 5px;
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
 }
-.icons li i{
-    font-size: 26px;
-    opacity: 0.8;
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
 }
-.icons li i:hover{
-    color: #06d6a0;
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
 }
 
-
-/*****************/
-
-@media(max-width: 992px){
-    section{
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-    .image{
-        height: 100vh;
-    }
-    .content{
-        height: 100vh;
-    }
-    .content h2{
-        font-size: 20px;
-        margin-top: 50px;
-    }
-    .content span{
-        margin: 20px 0;
-    }
-    .content p{
-        font-size: 14px;
-    }
-    .links li a{
-        font-size: 14px;
-    }
-    .links{
-        margin: 5px 0;
-    }
-    .links li{
-        padding: 6px 10px;
-    }
-    .icons li i{
-        font-size: 15px;
-    }
 }
-        </style>
-    </head>
 
-    <body>
-        <section>
-            <div class = "image">
-                <!-- image here -->
-            </div>
+    </style>
+</head>	
+<body>
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>About Us</h1>
+				</div>
+				<div class="content">
+					<h3>The journey of a thousand miles begins with a single step.</h3>
+					<p>TripIt is thrilled to share our knowledge of tours and trip in India  and offer guided and independent packages with an emphasis (among other forms of travel) on rail transportation so you can sit back and let Canada come to you. Experience what your neighbors have been talking about and leave the rest to us. Our tours come from considerable research of the route our tours travel and communities along the way that we visit to ensure you have a memorable experience and memories for years to come.</p>
+					<div class="button">
+						<a href="">Read More</a>
+					</div>
+				</div>
+				<div class="social">
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="./package/images/img one.jpg">
+			</div>
+		</div>
+	</div>
 
-            <div class = "content">
-                <h2>About Us</h2>
-                <span><!-- line here --></span>
-
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aspernatur voluptas inventore ab voluptates nostrum minus illo laborum harum laudantium earum ut, temporibus fugiat sequi explicabo facilis unde quos corporis!</p>
-
-                <ul class = "links">
-                    <li><a href = "#">work</a></li>
-
-                    <div class = "vertical-line"></div>
-
-                    <li><a href = "./index.html">service</a></li>
-
-                    <div class = "vertical-line"></div>
-                    
-                    <li><a href = "#">contact</a></li>
-                </ul>
-
-                <ul class = "icons">
-                    <li>
-                        <i class = "fa fa-twitter"></i>
-                    </li>
-                    <li>
-                        <i class = "fa fa-facebook"></i>
-                    </li>
-                    <li>
-                        <i class = "fa fa-github"></i>
-                    </li>
-                    <li>
-                        <i class = "fa fa-pinterest"></i>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-    </body>
+	
+</body>
 </html>
