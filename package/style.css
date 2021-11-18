@@ -64,108 +64,6 @@ section {
     color: var(--orange);
 }
 
-
-/* header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(59, 58, 58, 0.952);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-header .logo {
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-header .logo span {
-    color: rgb(255, 94, 0);
-}
-
-.navbar a {
-    color: #fff;
-    font-size: 25px;
-    padding: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.log {
-    color: white;
-    font-size: 20px;
-    background-color: rgb(223, 19, 53);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.log:hover {
-    background-color: rgb(240, 72, 42);
-}
-
-.navbar a:hover {
-    background-color: rgb(190, 43, 68);
-}
-
-.navbar i {
-    margin-right: 10px;
-}
-
-header .icons i {
-    font-size: 2.5rem;
-    color: #fff;
-    cursor: pointer;
-    margin-right: 2rem;
-}
-
-header .icons i:hover {
-    color: orange;
-}
-
-header .search-bar-container {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    padding: 1.5rem 2rem;
-    background: #333;
-    border-top: .1rem solid rgba(255, 255, 255, .2);
-    display: flex;
-    align-items: center;
-    z-index: 1001;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
-
-header .search-bar-container.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-header .search-bar-container #search-bar {
-    width: 100%;
-    padding: 1rem;
-    text-transform: none;
-    color: #333;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-}
-
-header .search-bar-container label {
-    color: #fff;
-    cursor: pointer;
-    font-size: 3rem;
-    margin-left: 1.5rem;
-}
-
-header .search-bar-container label:hover {
-    color: var(--orange);
-} */
-
 #menu-bar {
     color: #fff;
     border: .1rem solid #fff;
@@ -367,68 +265,8 @@ header .search-bar-container label:hover {
     }
 }
 
-.card1 {
-    width: 25%;
-    height: 50vh;
-    display: inline-flex;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 60px;
-    margin-right: 70px;
-    margin-left: 5%;
-}
-
-.card2 {
-    width: 25%;
-    height: 50vh;
-    display: inline-flex;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 60px;
-    margin-right: 90px;
-}
-
-.card3 {
-    width: 25%;
-    height: 50vh;
-    display: inline-flex;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 60px;
-}
-
-.card4 {
-    width: 25%;
-    height: 50vh;
-    display: inline-flex;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 60px;
-    margin-right: 90px;
-    margin-left: 15%;
-}
-
-.card5 {
-    width: 25%;
-    height: 50vh;
-    display: inline-flex;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 60px;
-    margin-right: 90px;
-}
-
-.card6 {
-    width: 25%;
-    height: 50vh;
-    display: inline-flex;
-    background-color: white;
-    margin-bottom: 30px;
-    margin-top: 60px;
-}
-
 body {
-    background-color: grey;
+    background-color: rgb(195, 228, 241);
 }
 
 * {
@@ -440,8 +278,8 @@ body {
 
 .header {
     overflow: hidden;
-    padding: 20px 10px;
-    background: rgba(59, 58, 58, 0.952);
+    padding: 15px 10px;
+    background: rgb(71, 69, 69);
 }
 
 
@@ -559,7 +397,8 @@ body {
     margin: 0;
 }
 
-div#slider {
+
+/* div#slider {
     overflow: hidden;
 }
 
@@ -576,4 +415,40 @@ div#slider figure {
     text-align: left;
     font-size: 0;
     animation: 30s slidy infinite;
+} */
+
+.services .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.services .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: tomato;
+}
+
+.services .box-container .box i {
+    padding: 1rem;
+    font-size: 5rem;
+    color: wheat;
+}
+
+.services .box-container .box h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.services .box-container .box p {
+    font-size: 1.5rem;
+    color: rgb(241, 237, 237);
+    text-shadow: 5px 5px 5px 5px purple;
+    padding: 1rem 0;
+}
+
+.services .box-container .box:hover {
+    box-shadow: 0 1rem 2rem black;
 }
