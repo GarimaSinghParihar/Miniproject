@@ -266,7 +266,7 @@ section {
 }
 
 body {
-    background-color: grey;
+    background-color: rgb(195, 228, 241);
 }
 
 * {
@@ -397,7 +397,8 @@ body {
     margin: 0;
 }
 
-div#slider {
+
+/* div#slider {
     overflow: hidden;
 }
 
@@ -414,4 +415,40 @@ div#slider figure {
     text-align: left;
     font-size: 0;
     animation: 30s slidy infinite;
+} */
+
+.services .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.services .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: tomato;
+}
+
+.services .box-container .box i {
+    padding: 1rem;
+    font-size: 5rem;
+    color: wheat;
+}
+
+.services .box-container .box h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.services .box-container .box p {
+    font-size: 1.5rem;
+    color: rgb(241, 237, 237);
+    text-shadow: 5px 5px 5px 5px purple;
+    padding: 1rem 0;
+}
+
+.services .box-container .box:hover {
+    box-shadow: 0 1rem 2rem black;
 }
