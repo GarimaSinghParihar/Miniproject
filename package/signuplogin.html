@@ -16,7 +16,7 @@
         
         body {
             background-color: rgba(0, 0, 0, 0.39);
-            background-image: url('./images/Travel\ zones.png');
+            background-image: url('./images/loggggg1.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -113,6 +113,89 @@
                 float: none;
             }
         }
+        
+        .footer {
+            background: #333;
+        }
+        
+        .footer .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        
+        .footer .box-container .box {
+            padding: 1rem 0;
+            flex: 1 1 25rem;
+        }
+        
+        .footer .box-container .box h3 {
+            font-size: 30px;
+            padding: .7rem 0;
+            color: #fff;
+            margin-left: 20px;
+        }
+        
+        .footer .box-container .box p {
+            font-size: 20px;
+            padding: 5px;
+            color: #eee;
+            margin-left: 20px;
+        }
+        
+        .footer .box-container .box a {
+            display: block;
+            font-size: 20px;
+            padding: .7rem 0;
+            color: #eee;
+        }
+        
+        .footer .box-container .box a:hover {
+            color: var(--orange);
+            text-decoration: underline;
+        }
+        
+        .footer .credit {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: normal;
+            color: #fff;
+            border-top: .1rem solid rgba(255, 255, 255, .2);
+        }
+        
+        .footer .credit span {
+            color: var(--orange);
+        }
+        /* media queries  */
+        
+        @media (max-width:1200px) {
+            html {
+                font-size: 55%;
+            }
+        }
+        
+        @media (max-width:991px) {
+            section {
+                padding: 2rem;
+            }
+        }
+        
+        @media (max-width:768px) {
+            #menu-bar {
+                display: initial;
+            }
+        }
+        
+        @media (max-width:450px) {
+            html {
+                font-size: 50%;
+            }
+            .heading span {
+                font-size: 2.5rem;
+            }
+        }
     </style>
 </head>
 
@@ -137,7 +220,7 @@
         <div class="card">
             <img src="./images/travel-world.jpg" width="98%" height="50%" style="padding: 10px; border:8px solid white;border-style:dotted"><br>
 
-            <img src="./images/b-modified.png" alt="" usemap="#mysmap" width="27%" height="35%" style="margin-top:30px;margin-left:14%; ">
+            <img src="./images/b-modified.png" alt="" usemap="#mysmap" width="27%" height="35%" style="margin-top:25px;margin-left:14%; ">
             <div class="circle1" usemap="#mysmap">
                 <map name="mysmap">
                     <area 
@@ -157,9 +240,53 @@
             
             <div class="circle2"></div>
             <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-left:23%;margin-top:-10px;text-shadow:4px 4px 4px rgb(9, 46, 9)">ADMIN</h2>
-            <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-left:65%;margin-top:-20px;text-shadow:4px 4px 4px rgb(9, 46, 9)">USERS</h2>
+            <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-left:65%;margin-top:-10px;text-shadow:4px 4px 4px rgb(9, 46, 9)">USERS</h2>
         </div>
+    
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>About Us</h3>
+                <p>Travel and tourism is the largest service industry in India. It provides heritage, cultural, medical, business and sports tourism. The main objective of this sector is to develop and promote tourism, maintain competitiveness of India as
+                    tourist destination and improve and expand existing tourism products to ensure employment generation and economic growth.</p>
+            </div>
+            <div class="box" style="margin-left:30px">
+                <h3 style="margin-left:-10px">Branch Locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
+            </div>
+            <div class="box">
+                <h3 style="margin-left: -80px;">Quick Links</h3>
+                <a href="#home" style="margin-left:-70px">home</a>
+                <a href="./package/About Us.html" style="margin-left:-70px">About Us</a>
+                <a href="#Places" style="margin-left:-70px">Places</a>
+                <a href="#Services" style="margin-left:-70px">Services</a>
+                <a href="./package/Reviews.html" style="margin-left:-70px">Reviews</a>
+                <a href="./package/Contact Us.html" style="margin-left:-70px">Contact</a>
+
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> created by <span> Aditi And Garima </span> | All rights reserved! </h1>
+
+    </section>
+
+
+    </footer>
     </div>
+
 </body>
 
 </html>
